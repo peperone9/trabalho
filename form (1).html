@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 125%;
+            background: #f00000;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .right {
+            text-align: right;
+
+        }
+
+        .centralizado {
+            text-align: center;
+        }
+
+        form {
+            position: absolute;
+            background-color: rgb(0, 0, 0, 0.8);
+
+        }
+
+        .centraliza {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 23%;
+        }
+
+        fieldset {
+            border: 3px solid white;
+        }
+
+        legend {
+            border: 3px solid white;
+            padding: 10px;
+            text-align: center;
+            background-color: #f00000
+        }
+
+        #coment {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body class="centraliza">
+    <script>
+        $(document).ready(function () {
+            $("#telefone").inputmask("(999) 9999-9999");
+        });
+    </script>
+    <form id="formulario" id="formulario" method="post" action="pedrowwyx@gmail.com" enctype="text/plain">
+        <fieldset>
+            <legend>CADASTRE-SE</legend>
+            <table>
+                <tr>
+                    <td class="right">
+                        <label for="Nome">Nome completo:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="nome" id="nome" placeholder="Preencha o nome completo" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">
+                        <label for="Senha">Senha:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="senha" id="senha" placeholder="Preencha" required />
+                    </td>
+                </tr>
+
+                <td class="right">
+                    <label for="Data de Nascimento">Data de Nascimento:</label>
+                </td>
+                <td>
+                    <input type="date" name="data" id="data" />
+                </td>
+                </tr>
+                <tr>
+                    <td class="right">
+                        <label for="email">E-mail:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                <tr>
+                    <td class="right">
+                        <label for="Cidade">Cidade:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="cidade" id="cidade">
+                    </td>
+                <tr>
+
+                    <td class="right">
+                        <label for="UF">UF: </label>
+                    </td>
+                    <td>
+                        <select id="UF" name="UF">
+                            <option>RO</option>
+                            <option>AC</option>
+                            <option>SP</option>
+                            <option>RJ</option>
+                            <option>RR</option>
+                            <option>PA</option>
+                            <option>PE</option>
+                            <option>MG</option>
+                            <option>ES</option>
+                            <option>SC</option>
+                            <option>RS</option>
+                            <option>CE</option>
+                            <option>AL</option>
+                            <option>BA</option>
+                            <option>MT</option>
+                            <option>GO</option>
+                            <option>DF</option>
+                            <option>AL</option>
+                            <option>PI</option>
+                            <option>RN</option>
+                            <option>PB</option>
+                            <option>SE</option>
+                            <option>AP</option>
+                            <option>RR</option>
+                            <option>MA</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">
+                        <label for="Telefone">Telefone:</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(999) 9999-9999">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="direita">
+                        <label for="Comentários">Complemento: </label>
+                    </td>
+                    <td>
+                        <textarea id="coment" name="coment" cols="30" rows="4" placeholder="Digite aqui..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centralizado">
+                        <input type="submit" value="Enviar" onClick="Envio()" />
+                        <input type="reset" value="Resetar"
+                            onClick="window.document.getElementById('Nome'). focus();" />
+                    </td>
+                </tr>
+            </table>
+
+</body>
+
+</html>

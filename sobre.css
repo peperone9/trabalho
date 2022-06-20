@@ -1,0 +1,70 @@
+.chefe{
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img{
+      
+      width: 350px;
+      height: 350px;
+      margin-left: 460px;
+      border-radius: 20px;
+}
+
+p{
+    
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+    
+    
+}
+
+.paragrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.restaurante{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+    align-content: flex-start;
+    
+}
+
+.restaurante img{
+    margin-left: 0;
+}
+
+.texto-rest{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0;
+}
+
+.origem-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 100px;
+    padding-top: 0;
+}

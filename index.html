@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <a class="logo"href="">
+            <img src="./IMG/55.png" class="lg">
+        </a>
+        <nav id="nav">
+            <button id="btn-mobile">
+              <span id="hamb"></span>
+            </button>
+            
+            <ul id="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Cadastro</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="./IMG/55.png" class="lg" />
+                </div>
+
+                <div class="redes-sociais">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/MrWish-102361192496542/?ref=page_internal">
+                                <img src="./IMG/78c012e7678761400082c6130487a463__1_-removebg-preview (1).png"
+                                    class="imgmenu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/mr.wiish/">
+                                <img src="./IMG/images__1_-removebg-preview.png" class="imgmenu" />
+                            </a>
+                        </li>
+                        <li> -->
+                            <!-- <a href="">
+                                    <img src="./IMG/55d20c74676e13c18110273a613508cb-removebg-preview.png" class="imgmenu"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./IMG/linkedin.png" />
+                                </a>
+                            </li> 
+                    </ul>
+                </div>
+            </div>
+        </main> -->
+    <!-- </header>
+    <main class="CemPorCentoDaTela menu-urls"> -->
+        <!-- <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="./form (1).html">Cadastre-se</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li
+                        onClick="alert('É preciso estar registrado em nosso site para ter acessibilidade aos nossos serviços')">
+                        <a href="">Serviços</a>
+                    </li>
+                    <li><a href="">Contate-nos</a></li>
+                </ul>
+            </div>
+            <div class="busca">
+                <input type="text" placeholder="Pesquise por algo">
+            </div>
+        </div> -->
+        <!-- <div class="CemPorCentoDaTela"> -->
+
+        <!-- <div class="slide">
+            <img src="./IMG/italiano 1.jpg" />
+            <img src="./IMG/italiano 2.jpg" />
+        </div> -->
+
+        <div id="items-wrapper">
+            <div id="items">
+                <div class="item"><img class="slide"src="./IMG/italiano 1.jpg"></div>
+                <div class="item"><img class="slide"src="./IMG/italiano 2.jpg"></div>
+                <div class="item"><img class="slide"src="./IMG/copo.jpg"></div>
+                <div class="item"><img class="slide"src="./IMG/bebida.jpg"></div>
+                <div class="item"><img class="slide"src="./IMG/comida 1.jpg"></div>
+                <div class="item"><img class="slide"src="./IMG/comida 2.jpg"></div>
+                <div class="item"><img class="slide"src="./IMG/comida 3.jpg"></div>
+                <div class="item"><img class="slide"src="./IMG/comida 4.jpg"></div>
+                <div class="item"><img class="slide"src="./IMG/comida 5.jpg"></div>
+                <div class="item"><img class="slide"src="./IMG/cocomida 6.jpg"></div>
+    
+            </div>
+        </div>
+
+        <script>
+
+            document.querySelector("#items")
+            .addEventListener("wheel", event=> {
+            if(event.deltaY > 0){
+             event.target.scrollBy(-300, 0);
+            }
+            else{
+               event.target.scrollBy(300, 0);
+            }
+            })
+
+            const intervalo = () => {
+                setInterval()
+            }
+
+            //DIV DO TEU BANNER
+            const banner = document.querySelector("#items");
+            banner.addEventListener("mouseover", () => {
+                //tirando o scroll da pagina quando coloca o mouse no banner
+                document.body.classList.add("esconde");
+                //Rodando o evento pra mostrar o scroll da pagina quando ele tirar o mouse do banner
+                banner.addEventListener("mouseout", function() {
+                    document.body.classList.remove("esconde");
+
+                })
+                banner = on
+            })
+        </script>
+        <div class="tela-cem">
+            <div class="content">
+                <h1>Bem vindo(a) ao <strong>Mr.Wish</strong></h1>
+                <p>Respeitar a tradição é a certeza de utilizar um conhecimento <br> milenar na preparação de seus pratos.
+                    Seleção nos ingredientes, <br> cuidado no preparo e atenção no atendimento. <br> Essa é a nossa receita.</p>
+            </div>
+             <div class="menu-buttons">
+             <a id="button" href="">Faça sua reserva</a>
+             <a id="button1" href="">Peça em delivery</a>
+            </div>
+            <div class="unidade CemPorCentoDaTela">
+
+                <div class="col-3">
+                    <img src="./IMG/640242-removebg-preview.png">
+                    <h2>Conheça nossas receitas tradicionais</h2>
+                </div>
+                <div class="col-3">
+                   <a href="https://www.google.com/maps/d/edit?mid=14-7cbTpMbzzDryxwu12_hVWucG5JtdM&usp=sharing" target="_blank">
+                    <img src="./IMG/1599904-removebg-preview.png">
+                    </a>
+                    <h2>Conheça nossas unidades</h2>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.travelclass.tur.br/blog/gastronomia/italia-conheca-mais-sobre-a-cultura-e-gastronomia-italiana/"
+                        target="_blank">
+                        <img class="japa img"
+                            src="./IMG/adfa1067c3d66dc4e5b89f9910310798--family-crest-symbols-samurai-wars-removebg-preview.png">
+                    </a>
+                    <h2>Conheça um pouco sobre a nossa cultura</h2>
+                </div>
+            </div>
+
+            <!-- <div class="CemPorCentoDaTela bloco-imagens-texto">
+                <div class="content" style="margin: 0 auto;">
+                    <h2>Pratos tipicos que o restaurante oferece</h2>
+                    <div class="col-4 bloco-texto bloco-imagem">
+                        <img src="./IMG/bucatini-all-amatriciana.jpeg">
+                        <p><b>Bucatini all’amatriciana</b></p>
+                    </div>
+                    <div class="col-4 bloco-texto bloco-imagem">
+                        <img src="./IMG/282166_original (1).png">
+                        <p><b>Ravioli</b></p>
+                    </div>
+                    <div class="col-4 bloco-texto bloco-imagem">
+                        <img src="./IMG/risotto-aux-couleurs-de-l-italie-1619.jpg">
+                        <p><b>Risotto</b></p>
+
+                    </div>
+                </div>
+                <div class="content" style=" margin: 0 auto;">
+                    <div class="col-4 bloco-texto bloco-imagem">
+                        <img src="./IMG/Struffoli.jpg">
+                        <p><b>Struffoli</b></p>
+
+                    </div>
+                    <div class="col-4 bloco-texto bloco-imagem">
+                        <img src="./IMG/222222222.png">
+                        <p><b>Pizza italiana</b></p>
+                    </div>
+                    <div class="col-4 bloco-texto bloco-imagem">
+                        <img src="./img/imagem3.png">
+                        <p><b>teste</b></p>
+                        <p>teste
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="container">
+                <div class="menu">
+                  <h2 class="menu-group-heading">
+                    Promoções do dia
+                  </h2>
+                  <div class="menu-group">
+                    <div class="menu-item">
+                      <img class="menu-item-image" src="http://www.cabanamontefusco.com.br/wp-content/uploads/2020/04/Macarr%C3%A3o-Como-surgiram-as-massas-populares-cabana-montefusco.jpg" alt="Bruschetta">
+                      <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                          <span class="menu-item-name">Spaghetti </span>
+                          <span class="menu-item-price">R$15,00</span>
+                        </h3>
+                        <p class="menu-item-description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, reprehenderit. Ratione nisi vel deleniti expedita excepturi eveniet? Nihil, commodi? Iure ipsam perspiciatis nam saepe quisquam unde necessitatibus aut optio earum..
+                        </p>
+                      </div>
+                    </div>
+                    <div class="menu-item">
+                      <img class="menu-item-image" src="https://uploads.metropoles.com/wp-content/uploads/2020/08/04090259/Risoto-com-cogumelo-600x400.jpg" alt="Bruschetta">
+                      <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                          <span class="menu-item-name">Risotto</span>
+                          <span class="menu-item-price">R$12,50</span>
+                        </h3>
+                        <p class="menu-item-description">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquam maiores hic at ullam provident, veniam autem exercitationem vel animi voluptates consectetur, dolores, eos molestias! Fugiat at dolorum adipisci officiis?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="menu-group">
+                    <div class="menu-item">
+                      <img class="menu-item-image" src="https://herbalifelifeon.com.br/wp-content/uploads/2021/09/Lasanha_LifeOn.jpg" alt="Bruschetta">
+                      <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                          <span class="menu-item-name">Lasanha</span>
+                          <span class="menu-item-price">R$18,00</span>
+                        </h3>
+                        <p class="menu-item-description">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci, amet incidunt odio ea nesciunt libero ipsa quasi, aliquid ducimus eaque alias! Ipsum excepturi totam assumenda, sit quis eligendi facere.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="menu-item">
+                      <img class="menu-item-image" src="" alt="Bruschetta">
+                      <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                          <span class="menu-item-name">Bruschetta</span>
+                          <span class="menu-item-price">$12.90</span>
+                        </h3>
+                        <p class="menu-item-description">
+                          Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                          congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <div class="button-c">
+                         <a id="button2" href="">Veja o cardápio completo</a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+
+    </main>
+
+  
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+        function alternarMenu() {
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+        }
+        
+        btnMobile.addEventListener('click', alternarMenu);
+        
+        </script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./JS/main.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        .menu {
+            font-family: sans-serif;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .categorias-menu {
+            margin: 0;
+            padding-bottom: 1em;
+            border-bottom: 2px solid #c10c0c;
+
+        }
+        .comidas-menu{
+            display:grid;
+            grid-template-columns: 1fr;
+            gap: 1.5em;
+            padding: 1.5em 0;
+        }
+        
+        .produto-item{
+            display: flex;
+        }
+
+        .produto-imagem{
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            object-fit: cover;
+            margin-right: 1.5em;
+        }
+
+        .produto-item-texto{
+                flex-grow: 1;
+            }
+
+        .produto-heading{
+               display: flex;
+               justify-content: space-between;
+               margin: 0;
+            }
+
+        .produto-nome{
+                margin-right: 1.5em;
+            }
+
+
+        .produto-desc{
+            line-height: 1.6;
+        }  
+
+        @media screen and(min-width:992px){
+            .menu{
+                font-size:16px;
+            }
+
+            .comidas-menu{
+                grid-template-columns: repeat(2, 1fr);
+               
+            }
+
+            .produto-imagem{
+                width: 125px;
+                height: 125px;
+            }
+
+          
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <h2 class="categorias-menu">
+                Entrada
+            </h2>
+
+        <div class="comidas-menu">
+            <div class="produto-item">
+                <img src="./IMG/bucatini-all-amatriciana.jpeg" alt="" class="produto-imagem">
+                <div class="produto-item-texto">
+                    <h3 class="produto-heading">
+                        <span class="produto-nome">Bucatini all’amatriciana</span>
+                        <span class="produto-preço">R$50,00</span>
+                    </h3>
+                    <p class="produto-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsam ipsum expedita eveniet excepturi consequuntur eaque suscipit totam, numquam ratione qui om</p>
+                </div>
+
+
+                  
+                
+
+        </div>
+    </div>
+</body>
+
+</html>
